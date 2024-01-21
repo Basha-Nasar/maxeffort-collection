@@ -43,8 +43,24 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "dZDpks4Y77yO/Q/ajGWCE1y+xyc3iIG+qlCKD1h7k/g=",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"OrderList\": [\n        {\n            \"OrderNo\": \"STASHDEMO100002\",\n            \"OrderDate\": \"2022-09-08 15:19:01.998510\",\n            \"OrderType\": \"IN\",\n            \"OrderReturnNo\": \"\",\n            \"OrderShipperName\": \"PickUP\",\n            \"OrderPaymentMehod\": \"\",\n            \"OrderCurrencyCode\": \"AED\",\n            \"OrderPickupDate\": \"\",\n            \"OrderPickupNote\": \"\",\n            \"OrderConsigneeFirstName\": \" \",\n            \"OrderConsigneeLastName\": \"\",\n            \"OrderConsigneeCompanyName\": \"\",\n            \"OrderConsigneeAddressType\": \"\",\n            \"OrderConsigneeAddress\": \"\",\n            \"OrderConsigneeCity\": \"\",\n            \"OrderConsigneeRegion\": \"\",\n            \"OrderConsigneeCountryCode\": \"\",\n            \"OrderConsigneePostal\": \"\",\n            \"OrderConsigneeEmail\": \"na@na.com\",\n            \"OrderConsigneePhone\": \"\",\n            \"CustomsAmount\": \"0\",\n            \"OrderOrderAmount\": \"0\",\n            \"OrderOrderAmountWithOutTax\": 0,\n            \"OrderOrderTaxAmount\": 0,\n            \"OrderOrderDiscountAmount\": 0,\n            \"OrderOrderShippingAmount\": 0,\n            \"OrderLineList\": [\n                {\n                    \"OrderLineProductID\": \"DEMO100001\",\n                    \"OrderLineProductSKU\": \"DEMO100001\",\n                    \"OrderLineProductName\": \"T-SHORT (BLACK COLOR - SMALL SIZE)\",\n                    \"OrderLineOrderQty\": 100,\n                    \"OrderLineUnitPrice\": 10.00,\n                    \"OrderLineOrderLineAmount\": 0.00,\n                    \"OrderLineOrderLineAmountWithOutTax\": 0.00,\n                    \"OrderLineOrderLineTaxAmount\": 0.00,\n                    \"OrderLineOrderLineDiscountAmount\": 0.00\n                }\n            ]\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://38.89.140.3:1278/api/v1/inboundorder"
 					},
 					"response": []
 				}
