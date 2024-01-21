@@ -1,9 +1,8 @@
 {
 	"info": {
-		"_postman_id": "ff37d521-346a-4ca2-8e4b-56525ff3659d",
+		"_postman_id": "b5c1e501-4a27-4dd8-864f-05a4881bfb96",
 		"name": "Max Effort",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "22984371-ff37d521-346a-4ca2-8e4b-56525ff3659d"
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
@@ -11,7 +10,7 @@
 			"item": [
 				{
 					"name": "Add Products",
-					"id": "83e73d1d-b5b1-4204-8f06-58496041b09d",
+					"id": "d03b065f-12b8-4927-8b94-eb31e28b70c3",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -33,27 +32,24 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://38.89.140.3:1278/api/v1/product",
-							"protocol": "http",
-							"host": [
-								"38",
-								"89",
-								"140",
-								"3"
-							],
-							"port": "1278",
-							"path": [
-								"api",
-								"v1",
-								"product"
-							]
-						}
+						"url": "http://38.89.140.3:1278/api/v1/product"
+					},
+					"response": []
+				},
+				{
+					"name": "Inbound",
+					"id": "a40c4baf-0fca-4209-8657-37d8d7033dd8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
 					},
 					"response": []
 				}
 			],
-			"id": "68273436-6df6-40a1-b119-7e51232013d4"
+			"id": "1f126455-3ad9-48b0-8716-cdb439ba87d5"
 		}
 	]
 }
